@@ -65,10 +65,18 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "vibrate": {
+          '0%, 100%': { transform: 'translate(0)' },
+          '20%': { transform: 'translate(-1px, 1px)' },
+          '40%': { transform: 'translate(-1px, -1px)' },
+          '60%': { transform: 'translate(1px, 1px)' },
+          '80%': { transform: 'translate(1px, -1px)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "vibrate": 'vibrate 0.5s linear infinite',
       },
     },
   },
