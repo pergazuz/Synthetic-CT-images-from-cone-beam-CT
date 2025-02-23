@@ -10,6 +10,7 @@ build/
 dist/
 *.png
 torch.egg-info/
+src/data
 */**/__pycache__
 torch/version.py
 torch/csrc/generic/TensorMethods.cpp
