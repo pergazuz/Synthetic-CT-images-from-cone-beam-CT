@@ -8,7 +8,7 @@ results/
 build/
 dist/
 *.png
-!web/*.png
+!web/src/assets/**.png
 torch.egg-info/
 src/data
 */**/__pycache__
