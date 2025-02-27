@@ -1,15 +1,15 @@
 import TopNav from "./components/TopNav";
-import SynthesisContent from "./components/SynthesisContent";
+import ResultContent from "./components/ResultContent";
 import Footer from "./components/Footer";
 
-const SynthesisPage = () => {
+const ResultPage = () => {
   return (
     <div className="min-h-screen bg-[#F9F7F0]">
       <TopNav />
-      <SynthesisContent />
+      <ResultContent />
       <Footer />
     </div>
   );
 };
 
-export default SynthesisPage;
+export default ResultPage;
