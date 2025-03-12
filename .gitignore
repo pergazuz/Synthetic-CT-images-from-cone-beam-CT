@@ -1,5 +1,6 @@
 *.xml
 datasets/
+wandb/
 .ipynb_checkpoints/
 node_modules/
 .DS_Store

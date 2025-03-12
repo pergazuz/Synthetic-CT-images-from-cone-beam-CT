@@ -227,7 +227,7 @@ To train SinCUT (single-image translation, shown in Fig 9, 13 and 14 of the pape
 For example, to train a model for the [Etretat cliff (first image of Figure 13)](https://github.com/taesungp/contrastive-unpaired-translation/blob/master/imgs/singleimage.gif), please use the following command.
 
 ```bash
-python train.py --model sincut --name singleimage_monet_etretat --dataroot ./datasets/single_image_monet_etretat
+python train.py --dataroot ./datasets/grumpifycat --name grumpifycat_KANCUT --CUT_mode kancut
 ```
 
 or by using the experiment launcher script,
