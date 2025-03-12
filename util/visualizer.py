@@ -73,6 +73,7 @@ class Visualizer():
             import visdom
             self.plot_data = {}
             self.ncols = opt.display_ncols
+            self.create_visdom_connections()
             if "tensorboard_base_url" not in os.environ:
                 self.vis = visdom.Visdom(server=opt.display_server, port=opt.display_port, env=opt.display_env)
             else:
@@ -98,9 +99,8 @@ class Visualizer():
 
     def create_visdom_connections(self):
         """If the program could not connect to Visdom server, this function will start a new server at port < self.port > """
-        cmd = sys.executable + ' -m visdom.server -p %d &>/dev/null &' % self.port
-        print('\n\nCould not connect to Visdom server. \n Trying to start a server....')
-        print('Command: %s' % cmd)
+        cmd = sys.executable + ' -m visdom.server -p %d' % self.port
+        print(cmd)
         Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
 
     def display_current_results(self, visuals, epoch, save_result):
