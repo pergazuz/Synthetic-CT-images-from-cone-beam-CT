@@ -1,4 +1,5 @@
 *.xml
+datasets/
 .ipynb_checkpoints/
 node_modules/
 .DS_Store
